@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scale, Menu } from 'lucide-react';
+import { Scale, Presentation } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
@@ -12,28 +12,14 @@ const Header: React.FC = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">ClauseWise</h1>
-              <p className="text-xs text-gray-500">Powered by IBM Watson & Granite</p>
+              <p className="text-xs text-gray-500">Staff Training & Overview</p>
             </div>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              Analyze
-            </a>
-            <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              History
-            </a>
-            <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              About
-            </a>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
-              Sign In
-            </button>
-          </nav>
-          
-          <button className="md:hidden p-2">
-            <Menu className="w-6 h-6 text-gray-700" />
-          </button>
+          <div className="flex items-center space-x-3">
+            <Presentation className="w-5 h-5 text-blue-600" />
+            <span className="text-sm font-medium text-gray-700">Project Briefing</span>
+          </div>
         </div>
       </div>
     </header>
